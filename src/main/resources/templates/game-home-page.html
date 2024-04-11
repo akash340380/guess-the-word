@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>GuessTheWord</title>
+</head>
+<body>
+<h1 align="center">Guess the Word</h1>
+<h2 align="center" th:text="${wordToDisplay}">show a random word here</h2>
+<u></u>
+<div align="center">
+    <form action="/game-home" method="GET">
+        <label>Guess a character : </label>
+        <input type="text" name="gussedChar"/>
+        <input type="submit" value="try">
+    </form>
+</div>
+</body>
+</html>
